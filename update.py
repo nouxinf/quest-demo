@@ -1,6 +1,8 @@
 import game_map
+import tools
 global level, xq_required
 def update(health, max_health, hunger, saturation, x, y, xp, required_levels):
+    tools.clear_screen()
     print(f'Health: {health}/{max_health}')
     print(f'Hunger: {hunger}')
     print("\n")
