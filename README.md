@@ -24,7 +24,7 @@ main.py is the "handler" of the game. The main thing that it just does is it dis
 
 game_map.py is the script that has functions to create the map (init_map()), to check what tiles are next to the player (find_neighbour()) and to change the material value in the code to human readable text (format_material()).
 
-update.py is the script that has the update() function, which tells the player about stats and position, and also fiugures out the level of the player based on XP, and the amount of XP required for the next level.
+update.py is the script that has the update() function, which tells the player about stats and position, and also figures out the level of the player based on XP, and the amount of XP required for the next level.
 
 # How to play
 
