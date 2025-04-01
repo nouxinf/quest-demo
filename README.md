@@ -12,7 +12,9 @@ The game map is technically a 100x100 grid list, but I've made the player trappe
 In the grid, there are currently 2 materials
 - 0, being a wall
 - 1, being ground
+
 In future versions, more materials will be added to be specific.
+
 There are 3 files:
 - main.py
 - game_map.py
