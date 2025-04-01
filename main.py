@@ -38,32 +38,40 @@ def game_loop():
 required_levels = [-1, 0, 100]
 for i in range(100):
     required_levels.append(required_levels[-1] * 1.5)
-print("=============================================================")
-print("=   ____                  _     _____                       =")
-print("=  / __ \                | |   |  __ \                      =")
-print("= | |  | |_   _  ___  ___| |_  | |  | | ___ _ __ ___   ___  =")
-print("= | |  | | | | |/ _ \/ __| __| | |  | |/ _ \ '_ ` _ \ / _ \ =")
-print("= | |__| | |_| |  __/\__ \ |_  | |__| |  __/ | | | | | (_)| =")
-print("= \___\_\\__,_|\___||___/\__| |_____/ \___|_| |_| |_|\___/  =")
-print("=============================================================")
+try:
+    print(r"=============================================================""")
+    print(r"""=   ____                  _     _____                       =""")
+    print(r"""=  / __ \                | |   |  __ \                      =""")
+    print(r"""= | |  | |_   _  ___  ___| |_  | |  | | ___ _ __ ___   ___  =""")
+    print(r"""= | |  | | | | |/ _ \/ __| __| | |  | |/ _ \ '_ ` _ \ / _ \ =""")
+    print(r"""= | |__| | |_| |  __/\__ \ |_  | |__| |  __/ | | | | | (_)| =""")
+    print(r"""= \___\_\\__,_|\___||___/\__| |_____/ \___|_| |_| |_|\___/  =""")
+    print(r"""=============================================================""")
+except SyntaxWarning as s:
+    pass
 print("Welcome to the QuestDemo! What would you like to do?")
 print("[P]lay!")
 print("\n")
 print("[M]anual!")
+print("\n")
+print("[S]ettings!")
 print("\n")
 print("E[X]it!")
 start_input = input("> ")
 if start_input.lower() == "p" or start_input.lower() == "play":
     game_loop()
 elif start_input.lower() == "m" or start_input.lower() == "manual":
-    print("=====================================")
-    print("=  __  __                         _ =")
-    print("= |  \/  |                       | |=")
-    print("= | \  / | __ _ _ __  _   _  __ _| |=")
-    print("= | |\/| |/ _` | '_ \| | | |/ _` | |=")
-    print("= | |  | | (_| | | | | |_| | (_| | |=")
-    print("= |_|  |_|\__,_|_| |_|\__,_|\__,_|_|=")
-    print("=====================================")
+    try:
+        print(r"""=====================================""")
+        print(r"""=  __  __                         _ =""")
+        print(r"""= |  \/  |                       | |=""")
+        print(r"""= | \  / | __ _ _ __  _   _  __ _| |=""")
+        print(r"""= | |\/| |/ _` | '_ \| | | |/ _` | |=""")
+        print(r"""= | |  | | (_| | | | | |_| | (_| | |=""")
+        print(r"""= |_|  |_|\__,_|_| |_|\__,_|\__,_|_|=""")
+        print(r"""=====================================""")
+    except SyntaxWarning as s:
+        pass
     print("Press w, a, s or d to move around the game.")
     print("Currently, most things are unused. Just walk about I guess.")
     print("Ready to play?")
@@ -74,5 +82,7 @@ elif start_input.lower() == "m" or start_input.lower() == "manual":
         game_loop()
     else:
         sys.exit()
+elif start_input.lower() == "settings" or start_input.lower() == "s":
+    print()
 else:
     sys.exit()
