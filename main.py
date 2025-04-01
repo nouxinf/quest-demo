@@ -1,6 +1,7 @@
 import update
 import game_map
 import sys
+import tools
 health = 100
 max_health = 100
 hunger = 100
@@ -56,8 +57,10 @@ print("\n")
 print("E[X]it!")
 start_input = input("> ")
 if start_input.lower() == "p" or start_input.lower() == "play":
+    tools.clear_screen()
     game_loop()
 elif start_input.lower() == "m" or start_input.lower() == "manual":
+    tools.clear_screen()
     print(r"""=====================================""")
     print(r"""=  __  __                         _ =""")
     print(r"""= |  \/  |                       | |=""")
