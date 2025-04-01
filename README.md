@@ -6,7 +6,7 @@ A demo for an upcoming text adventure game, most things unfinished
 - Python 3+ and the standard libraries
 - that's it i think
 
-# How to play
+# How it works
 
 The game map is technically a 100x100 grid list, but I've made the player trapped in a 10x10 cage to make it easier to test.
 In the grid, there are currently 2 materials
